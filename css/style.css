@@ -1,0 +1,691 @@
+/*подключаю шрифт*/
+@import url("https://fonts.googleapis.com/css?family=Taviraj:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@font-face {
+	font-family: "Helvetica-Neue";
+	src: url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+		url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Helvetica-Neue";
+	src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"),
+		url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Helvetica-Neue";
+	src: url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2"),
+		url("../fonts/HelveticaNeueCyr-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+/*==================================================================================================*/
+/*=============================домашняя работа №1===================================================*/
+.wraper {
+	min-height: 100%;
+	overflow: hidden;
+	font-family: "Helvetica-Neue", sans-serif;
+}
+.wraper :focus {
+	outline: 5px solid green;
+}
+/*========================================header================================================*/
+.conteiner {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+.header {
+	margin: 0px 0px 30px 0px;
+	background-color: #eee;
+}
+.header *:last-child {
+	margin-bottom: 0px;
+}
+.header-title {
+	font-family: "Syne+Tactile", sans-serif;
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+}
+.header-title::after {
+	content: "";
+	display: block;
+	width: 377px;
+	height: 2px;
+	background-color: #ff5100;
+	margin: 10px 0px 0px 0px;
+}
+.subtitle {
+	font-weight: 900;
+	font-size: 20px;
+	margin: 0px 0px 20px 0px;
+}
+.subtitle:hover {
+	text-decoration: underline;
+	color: #ffa600;
+}
+.menu {
+	margin: 0px 0px 20px 0px;
+}
+.menu-list li {
+	max-width: 500px;
+	font-size: 18px;
+	border-radius: 0px 10px 10px 0px;
+	padding: 0px 0px 0px 30px;
+	margin: 0px 0px 10px 0px;
+	background-color: rgb(173, 173, 173);
+}
+.menu-list li:last-child {
+	margin-bottom: 0px;
+}
+
+.menu-list li:hover {
+	color: blue;
+	text-decoration: underline;
+	font-size: 22px;
+}
+.menu-list li:active {
+	color: blueviolet;
+	font-size: 20px;
+}
+.menu-list li ::before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: rgb(5, 143, 0);
+	margin: 0px 15px 0px -30px;
+}
+.menu-list :focus {
+	outline: 5px solid rgb(128, 0, 0);
+}
+
+/*=========================================main==============================================*/
+.main {
+	margin: 0px 0px 30px 0px;
+	background-color: rgb(202, 202, 202);
+}
+.main *:last-child {
+	margin-bottom: 0px;
+}
+.image-main {
+	margin: 0px 0px 20px 0px;
+}
+.image-main *:last-child {
+	margin-bottom: 0px;
+}
+/*отступ сделал для того что бы если добавится ниже контент он не прилип к картинке*/
+.image-main img {
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 0px rgb(43, 38, 38);
+	margin: 0px 0px 10px 0px;
+}
+
+.story {
+	padding: 20px;
+	background-color: rgb(0, 255, 106);
+	margin: 0px 0px 20px 0px;
+}
+.story > *:last-child {
+	margin-bottom: 0;
+}
+.story-title {
+	background-color: rgb(161, 59, 0);
+	color: aliceblue;
+	font-size: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	margin: 0px 0px 10px 0px;
+}
+.story-title:hover {
+	text-align: center;
+	font-size: 30px;
+	color: cornsilk;
+	background-color: rgb(0, 38, 49);
+}
+
+.story-text1 {
+	margin: 0px 0px 10px 0px;
+	border: 3px solid rgb(238, 255, 0);
+	background-color: rgb(0, 162, 184);
+	padding: 10px;
+}
+.story-text1 span {
+	color: blue;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.story-text1 span a:visited {
+	color: darkslategray;
+}
+.story-text2 {
+	margin: 0px 0px 10px 0px;
+	border: 3px solid rgb(30, 255, 0);
+	color: antiquewhite;
+	padding: 10px;
+	background: url(../img/image5.jpg) 0 0 no-repeat;
+}
+.story-text2:hover {
+	background: #000;
+}
+
+.description {
+	background-color: rgb(87, 87, 87);
+	padding: 20px;
+	margin: 0px 0px 20px 0px;
+}
+.description > *:last-child {
+	margin-bottom: 0px;
+}
+.description-title {
+	font-family: "Roboto", sans-serif;
+	padding: 20px 0px;
+	font-size: 30px;
+	text-align: center;
+	color: mediumseagreen;
+	background-color: rgb(107, 0, 0);
+	margin: 0px 0px 20px 0px;
+}
+.description-text {
+	background-color: rgb(0, 30, 112);
+	padding: 10px;
+	color: beige;
+	font-size: 20px;
+	margin: 0px 0px 10px 0px;
+}
+.description-list {
+	margin: 0px 0px 20px 0px;
+}
+.description-list li {
+	font-size: 20px;
+	padding: 0px 0px 0px 30px;
+	margin: 0px 0px 10px 0px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	opacity: 0.5;
+	color: royalblue;
+}
+.description-list li:last-child {
+	margin-bottom: 0px;
+}
+.description-list li::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: red url(../img/icon-list1.svg) 0 0/20px no-repeat;
+	margin: 0px 8px 0px -30px;
+}
+.description-list li:hover::before {
+	background: none;
+}
+.description-list li:hover {
+	color: red;
+	font-size: 25px;
+}
+
+.which {
+	background-color: rgb(0, 255, 234);
+	border-radius: 20px;
+	box-shadow: 0 0 20px 5px rgba(255, 208, 0, 0.507);
+	padding: 10px;
+	margin: 0px 0px 20px 0px;
+}
+.which *:last-child {
+	margin-bottom: 0px;
+}
+.which-title {
+	padding: 10px 0px;
+	color: #ffa600;
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+}
+.which-title::before {
+	content: "";
+	display: block;
+	width: 300px;
+	height: 2px;
+	background-color: rgb(83, 83, 83);
+	margin: 0px 0px 5px 0px;
+}
+.which-title::after {
+	content: "";
+	display: block;
+	width: 300px;
+	height: 2px;
+	background-color: rgb(83, 83, 83);
+	margin: 5px 0px 0px 0px;
+}
+.text-block {
+	margin: 0px 0px 20px 0px;
+}
+.text-block *:last-child {
+	margin-bottom: 0px;
+}
+.text-block p {
+	color: antiquewhite;
+	background-color: rgba(0, 129, 28, 0.562);
+	margin: 0px 0px 20px 0px;
+	padding: 5px;
+	border-radius: 0 0 30px 0;
+	box-shadow: 0 0 10px 5px rgb(0, 158, 47);
+}
+.text-block p:first-child {
+	background-color: rgba(17, 0, 173, 0.678);
+}
+.text-block p:last-child {
+	background-color: rgb(165, 165, 165);
+}
+.which-image {
+	text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+.which-image img:hover {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px 5px rgb(161, 145, 0);
+}
+
+.best {
+	margin: 0px 0px 20px 0px;
+}
+.best > *:last-child {
+	margin-bottom: 0px;
+}
+.best-title {
+	font-size: 50px;
+	margin: 0px 0px 20px 0px;
+}
+.best-title::after {
+	content: "";
+	display: block;
+	width: 1020px;
+	height: 4px;
+	background-color: rgb(49, 156, 0);
+	margin: 20px 0px 0px 0px;
+}
+.best-text {
+	background-color: rgba(177, 177, 177, 0.781);
+	font-size: 20px;
+	line-height: 1.1;
+	padding: 10px;
+	margin: 0px 0px 20px 0px;
+}
+.best-text:hover {
+	background-color: rgba(168, 177, 130, 0.781);
+	font-size: 20px;
+	line-height: 1.1;
+	text-decoration: underline;
+	padding: 10px;
+}
+.best-list {
+	margin: 0px 0px 20px 0px;
+}
+.best-list li {
+	font-size: 25px;
+	padding: 0px 0px 0px 36px;
+	margin: 0px 0px 5px 0px;
+}
+.best-list li::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon-list2.svg) 0 0/20px no-repeat;
+	margin: 0px 10px 0px -36px;
+}
+.best-list > *:last-child {
+	margin-bottom: 0px;
+}
+.duties {
+	margin: 0px 0px 20px 0px;
+}
+.duties *:last-child {
+	margin-bottom: 0px;
+}
+.duties-title {
+	font-size: 50px;
+	margin: 0px 0px 20px 0px;
+	color: darkgoldenrod;
+}
+.duties-title:hover::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 3px;
+	background-color: rgb(8, 8, 8);
+	margin: 0px 20px 0px 0px;
+}
+.duties p:not(:last-child) {
+	margin: 0px 0px 10px 0px;
+}
+.duties p:first-of-type {
+	background-color: rgb(73, 151, 0);
+}
+.duties p:last-of-type {
+	color: #ffa600;
+}
+
+.duties-text1 {
+	background-color: rgb(105, 0, 0);
+	color: aliceblue;
+}
+.duties-text2 {
+	font-size: 20px;
+	color: beige;
+	background-color: rgb(85, 0, 74);
+}
+.duties-text3 {
+	background-color: #000;
+	color: aliceblue;
+}
+
+.who {
+	background-color: rgb(255, 131, 131);
+	margin: 0px 0px 20px 0px;
+}
+.who *:last-child {
+	margin-bottom: 0px;
+}
+.who-title {
+	font-size: 50px;
+	color: crimson;
+	text-align: center;
+	padding: 20px 0px;
+	margin: 0px 0px 10px 0px;
+}
+.who-title::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgb(62, 20, 87);
+}
+.who-text {
+	background-color: rgb(68, 0, 0);
+	color: aliceblue;
+	font-size: 20px;
+	line-height: 1.5;
+	text-decoration: underline;
+	text-transform: uppercase;
+	padding: 20px;
+	margin: 0px 0px 10px 0px;
+	border-radius: 10px;
+}
+.who-text:nth-child(2),
+.who-text:nth-child(4) {
+	text-decoration: none;
+	background-color: rgb(255, 0, 0);
+	color: #000;
+}
+.career {
+	background-color: rgb(124, 124, 124);
+	padding: 30px;
+	margin: 0px 0px 20px 0px;
+}
+.career *:last-child {
+	margin-bottom: 0px;
+}
+.career-title {
+	font-size: 50px;
+	color: darkgreen;
+	margin: 0px 0px 10px 0px;
+}
+.career-title::first-letter {
+	color: #ffa600;
+	font-size: 80px;
+}
+.career-text {
+	font-size: 20px;
+	line-height: 1.6;
+	font-weight: 700;
+	margin: 0px 0px 10px 0px;
+}
+.career-text::first-line {
+	color: aqua;
+	font-size: 25px;
+	font-weight: 900;
+}
+/*=====================================footer==========================================*/
+.footer {
+	padding: 50px 0px;
+	background-color: rgb(109, 109, 109);
+}
+.footer *:last-child {
+	margin-bottom: 0px;
+}
+.conact {
+	color: rgb(197, 197, 197);
+	margin: 0px 0px 10px 0px;
+}
+.conact::before {
+	content: "";
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	background: url(../img/footer-icon1.svg) 0 0/15px no-repeat;
+	margin: 0px 10px 0px 0px;
+}
+.conact:hover::before {
+	content: "";
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	background: url(../img/footer-icon1.svg) 0 0/20px no-repeat;
+	margin: 0px 10px 0px 0px;
+}
+.conact:hover {
+	text-decoration: underline;
+	color: rgb(84, 84, 236);
+}
+.user {
+	color: rgb(197, 197, 197);
+	margin: 0px 0px 10px 0px;
+}
+.user:hover {
+	text-decoration: underline;
+	color: rgb(84, 84, 236);
+}
+.user::before {
+	content: "";
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	background: url(../img/footer-icon2.svg) 0 0/15px no-repeat;
+	margin: 0px 10px 0px 0px;
+}
+.user:hover::before {
+	content: "";
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	background: url(../img/footer-icon2.svg) 0 0/20px no-repeat;
+	margin: 0px 10px 0px 0px;
+}
+.portal {
+	color: rgb(197, 197, 197);
+	margin: 0px 0px 10px 0px;
+}
+.portal:hover {
+	text-decoration: underline;
+	color: rgb(84, 84, 236);
+}
+.portal::before {
+	content: "";
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	background: url(../img/footer-icon3.svg) 0 0/15px no-repeat;
+	margin: 0px 10px 0px 0px;
+}
+.portal:hover::before {
+	content: "";
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	background: url(../img/footer-icon3.svg) 0 0/20px no-repeat;
+	margin: 0px 10px 0px 0px;
+}
+.btn {
+	display: inline-block;
+	padding: 20px;
+	color: antiquewhite;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px 0px rgb(19, 19, 19);
+	background-color: rgb(0, 87, 7);
+	margin: 0px 0px 10px 0px;
+}
+.btn:hover {
+	background-color: rgb(0, 163, 14);
+	box-shadow: 2.5px 2.5px 5px 0px rgb(56, 56, 56);
+	margin: 2.5px 0px 0px 2.5px;
+}
+.btn:active {
+	background-color: rgb(0, 211, 18);
+	box-shadow: 0px 0px 0px 0px rgb(56, 56, 56);
+	margin: 5px 0px 0px 5px;
+}
+/*===================задание № 2 верстаю отрезок макета из FIGMA====================================*/
+.figma-wraper {
+	font-family: "Lato", sans-serif;
+}
+.figma-conteiner {
+	max-width: 389px;
+	margin: 0 auto;
+}
+/*на каждый главный блок задал background-color просто для себя*/
+.figma-header {
+	background-color: rgb(211, 211, 211);
+	margin: 0px 0px 40px 0px;
+}
+.figma-header-subtitle {
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1e212c;
+	margin: 0px 0px 8px 0px;
+}
+.figma-header-title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	color: #1e212c;
+	margin: 0px 0px 8px 0px;
+}
+.figma-header *:last-child {
+	margin-bottom: 0px;
+}
+.figma-main {
+	background-color: rgb(243, 192, 192);
+	margin: 0px 0px 30px 0px;
+}
+.figma-main *:last-child {
+	margin-bottom: 0px;
+}
+.figma-list {
+	margin: 0px 0px 48px 0px;
+}
+.figma-list li {
+	line-height: 160%;
+	color: #424551;
+	padding: 0px 0px 0px 36px;
+	margin: 0px 0px 4px 0px;
+}
+.figma-list li:last-child {
+	margin-bottom: 0px;
+}
+.figma-list li::before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/Vector1.svg) 0 0/16px no-repeat;
+	margin: 0px 16px 0px -36px;
+}
+.figma-btn {
+	display: inline-block;
+	padding: 0px 32px;
+	width: 161px;
+	height: 44px;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 44px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+	margin: 0px 0px 48px 0px;
+}
+.figma-btn:hover {
+	color: #001aff;
+	text-decoration: underline;
+}
+.figma-footer {
+	padding: 20px 0px;
+	background-color: rgb(97, 97, 97);
+}
+.figma-footer *:last-child {
+	margin-bottom: 0px;
+}
+.figma-text {
+	font-family: "Taviraj", sans-serif;
+	font-size: 36px;
+	line-height: 40px;
+	color: #333333;
+	padding: 20px 0px;
+	background-color: rgb(255, 255, 255);
+	margin: 0px 0px 30px 0px;
+}
+.figma-text::after {
+	content: "";
+	display: block;
+	width: 65px;
+	height: 1px;
+	background-color: #333333;
+	margin: 8px 0px 0px 0px;
+}
+.footer-figma-btn {
+	display: inline-block;
+	padding: 0px 32px;
+	width: 250px;
+	height: 65px;
+	background-color: red;
+	border-radius: 4px;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 66px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+	box-shadow: 5px 5px 5px 0px #bebebe;
+	margin: 0px 0px 30px 0px;
+}
+.footer-figma-btn:hover {
+	margin: 2.5px 0px 0px 2.5px;
+	box-shadow: 2.5px 2.5px 5px 0px #ce4444;
+	color: #00ff4c;
+	text-decoration: underline;
+	letter-spacing: 0.5px;
+	background-color: rgb(25, 0, 255);
+}
+.footer-figma-btn:active {
+	margin: 5px 0px 0px 5px;
+	box-shadow: 0px 0px 0px 0px #bebebe;
+	color: #00ff4c;
+	text-decoration: underline;
+	letter-spacing: 0.5px;
+	background-color: rgb(25, 0, 255);
+}
